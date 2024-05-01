@@ -52,7 +52,7 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
             child: Row(
               children: [
                 SizedBox(
-                  width: 40,
+                  width: 50,
                 ),
                 Visibility(
                   visible: !widget.isRecording,
@@ -113,7 +113,7 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
                         ? kErrorColor
                         : Theme.of(context)
                             .textTheme
-                            .bodyText1!
+                            .bodyLarge!
                             .color!
                             .withOpacity(0.64),
                   ),
@@ -144,10 +144,10 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
                           });
                         },
                         child: const Icon(Icons.keyboard, size: 35)),
-                    GestureDetector(
+                    /* GestureDetector(
                       onTap: () {},
                       child: const Icon(Icons.mic, size: 37),
-                    ),
+                    ), */
                     GestureDetector(
                       onTap: () {},
                       child: const Icon(Icons.photo_camera, size: 35),
