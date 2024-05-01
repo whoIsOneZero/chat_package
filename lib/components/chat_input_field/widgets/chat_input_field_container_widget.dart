@@ -52,7 +52,21 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
             child: Row(
               children: [
                 SizedBox(
-                  width: 50,
+                  width: 40,
+                ),
+                Visibility(
+                  visible: !widget.isRecording,
+                  child: InkWell(
+                    onTap: () {
+                      setState(() {
+                        _isDisplayTextField = false;
+                      });
+                    },
+                    child: const Icon(
+                      Icons.cancel_outlined,
+                      color: Colors.black,
+                    ),
+                  ),
                 ),
                 Expanded(
                   child: Form(
@@ -132,7 +146,7 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
                         child: const Icon(Icons.keyboard, size: 35)),
                     GestureDetector(
                       onTap: () {},
-                      child: const Icon(Icons.mic, size: 35),
+                      child: const Icon(Icons.mic, size: 37),
                     ),
                     GestureDetector(
                       onTap: () {},
