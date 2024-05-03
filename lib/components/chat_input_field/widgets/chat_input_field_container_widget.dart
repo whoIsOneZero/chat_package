@@ -126,6 +126,7 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
           )
         : Column(
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
             children: [ Container(
               padding: const EdgeInsets.symmetric(horizontal: 5),
               decoration: BoxDecoration(
