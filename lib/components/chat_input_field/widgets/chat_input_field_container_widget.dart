@@ -124,8 +124,9 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
               ],
             ),
           )
-        : Center(
-            child: Container(
+        : Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+            children: [ Container(
               padding: const EdgeInsets.symmetric(horizontal: 5),
               decoration: BoxDecoration(
                 //color: appBarColor,
@@ -153,7 +154,7 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
                       child: const Icon(Icons.photo_camera, size: 35),
                     ),
                   ]),
-            ),
+            ),]
           );
   }
 }
