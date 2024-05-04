@@ -138,7 +138,7 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
               height: 50,
               width: 150,
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     GestureDetector(
                         onTap: () {
