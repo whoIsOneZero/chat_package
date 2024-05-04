@@ -151,10 +151,10 @@ class _ChatTextViewWidgetState extends State<ChatInputFieldContainerWidget> {
                       onTap: () {},
                       child: const Icon(Icons.mic, size: 37),
                     ), */
-                    GestureDetector(
+                   /* GestureDetector(
                       onTap: () {},
                       child: const Icon(Icons.photo_camera, size: 35),
-                    ),
+                    ), */
                   ]),
             ),]
           );
